@@ -31,6 +31,10 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@mortar/web/mortar-angular.css",
+              "node_modules/@mortar/web/mortar-css-reset.css",
+              "node_modules/@mortar/web/mortar-web-grid.css",
+              "node_modules/@mortar/web/mortar-web-utilities.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -94,6 +98,10 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@mortar/web/mortar-angular.css",
+              "node_modules/@mortar/web/mortar-css-reset.css",
+              "node_modules/@mortar/web/mortar-web-grid.css",
+              "node_modules/@mortar/web/mortar-web-utilities.css",
               "src/styles.scss"
             ],
             "scripts": []

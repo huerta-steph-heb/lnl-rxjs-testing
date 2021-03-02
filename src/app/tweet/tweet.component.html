@@ -1,0 +1,30 @@
+<div class="tweet">
+  <mtr-card [style.maxWidth.px]="600">
+
+    <!-- Header -->
+    <mtr-card-header>
+      <!-- Header Image -->
+      <img mtr-card-image src="/assets/storefront.jpg" alt="Photo of an H-E-B Storefront" />
+      <mtr-card-title>{{displayName}}</mtr-card-title>
+      <mtr-card-subtitle>@{{username}}</mtr-card-subtitle>
+    </mtr-card-header>
+
+    <!-- Content -->
+    <mtr-card-content class="mb-2">
+      {{text}}
+    </mtr-card-content>
+
+    <!-- Content Image -->
+    <img *ngIf="!!imageUrl" mtr-card-image [src]="imageUrl" alt="" />
+
+
+    <!-- Footer -->
+    <mtr-card-footer class="tweet__controls">
+      <button mtr-button color="primary" icon="message-reply">Reply ({{_template.replyCount$ | async}})</button>
+      <button mtr-button color="primary" icon="repeat">Retweet ({{_template.retweetCount$ | async}})</button>
+      <button mtr-button color="primary" icon="heart">Like ({{_template.likeCount$ | async}})</button>
+      <button mtr-button color="primary" icon="share">Share</button>
+    </mtr-card-footer>
+
+  </mtr-card>
+</div>
