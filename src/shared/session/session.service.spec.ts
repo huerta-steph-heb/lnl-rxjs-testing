@@ -1,5 +1,4 @@
 import { fakeAsync } from '@angular/core/testing';
-import { of } from 'rxjs';
 import { TestScheduler } from 'rxjs/testing';
 import { SessionService } from './session.service';
 import { ReservedClaims } from './typings/reserved-claims';
