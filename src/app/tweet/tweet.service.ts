@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, timer } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -21,4 +22,6 @@ export class TweetService {
       map(() => 50),
     );
   }
+
+  public constructor(private httpClient: HttpClient) {}
 }
